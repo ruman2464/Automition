@@ -26,5 +26,11 @@ FirefoxDriver driver = new FirefoxDriver();
 	{
 		driver.findElement(By.id("email")).sendKeys("qachithi@gmail.com");
 	}
+	@Test
+	public void signup()
+	{
+		driver.findElement(By.xpath("html/body/div[1]/div[2]/div[1]/div/div[1]/div/div/div[2]/h1")).click();
+	}
+	
 
 }
