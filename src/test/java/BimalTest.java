@@ -1,4 +1,4 @@
-import org.junit.Before;
+ te import org.junit.Before;
 
 
 public class BimalTest 
