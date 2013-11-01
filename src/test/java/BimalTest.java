@@ -36,6 +36,8 @@ public class BimalTest
 	@Test
 	public void signUp()
 	{
+		driver.findElement(By.id("u_0_0")).sendKeys("asdf@gmail.com");
+		driver.findElement(By.id("u_0_1")).sendKeys("wert23");
 		
 	}
 	
