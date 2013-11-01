@@ -7,7 +7,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class LatifTest 
 {
-	FirefoxDriver browser=new FirefoxDriver();
+	FirefoxDriver driver=new FirefoxDriver();
 	void add()
 {
 	//This is new file
@@ -19,22 +19,22 @@ public class LatifTest
 	@Before
 	public void open()
 	{
-		browser.get("http://www.facebook.com");
+		driver.get("http://www.facebook.com");
 	}
 	
 	@After
 	public void close() throws InterruptedException
 	
 	{	Thread.sleep(9000);
-		browser.close();
+		driver.close();
 	}
 	
 	@Test
 	public void signIn()
 	{
-		browser.findElement(By.id("email")).sendKeys("latif1675@gmail.com");
-		browser.findElement(By.id("pass")).sendKeys("latif1234");
-		browser.findElement(By.id("u_0_e")).click();
+		driver.findElement(By.id("email")).sendKeys("latif1675@gmail.com");
+		driver.findElement(By.id("pass")).sendKeys("latif1234");
+		driver.findElement(By.id("u_0_e")).click();
 	}
 
 
