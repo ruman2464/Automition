@@ -16,8 +16,10 @@ FirefoxDriver browser = new FirefoxDriver();
 		browser.get("http://www.facebook");
 	}
 	@After
-	public void end()
+	public void end() throws InterruptedException
+	
 	{
+		Thread.sleep(9000);
 		browser.quit();
 	}
 	@Test
